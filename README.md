@@ -40,7 +40,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `npm dev`
 
-Runs the app in the development mode.<br />
+Runs the app in the development mode that required tsc --watch.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+### `npm dev:ts`
+
+Runs the app in the development mode that no required tsc --watch.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### tsc --watch
