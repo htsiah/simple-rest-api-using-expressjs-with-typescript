@@ -29,7 +29,16 @@ In the project directory, you can run:
 
 Download and install dependences.
 
+### `npm build`
+
+Build javascript from typescript
+
 ### `npm start`
+
+Runs the app in the production mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+### `npm dev`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

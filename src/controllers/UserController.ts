@@ -1,9 +1,9 @@
-import { RequestHandler } from "express";
-import { v4 as uuidv4 } from "uuid";
+import { RequestHandler } from 'express';
+import { v4 as uuidv4 } from 'uuid';
 
 const USERS: { id: any; name: string }[] = [
-  { id: "1", name: "Kai Jing" },
-  { id: "2", name: "Kai Zher" },
+  { id: '1', name: 'Kai Jing' },
+  { id: '2', name: 'Kai Zher' },
 ];
 
 export const getUsers: RequestHandler = (req, res, next) => {
@@ -27,7 +27,7 @@ export const updateUserById: RequestHandler = (req, res, next) => {
 
   const user = USERS.find((user) => user.id === id);
   if (user === undefined) {
-    res.status(404).send("Not Found");
+    res.status(404).send('Not Found');
   } else {
     const userIndex = USERS.findIndex((user) => user.id === id);
     user.name = name;
@@ -41,7 +41,7 @@ export const deleteUserById: RequestHandler = (req, res, next) => {
 
   const user = USERS.find((user) => user.id === id);
   if (user === undefined) {
-    res.status(404).send("Not Found");
+    res.status(404).send('Not Found');
   } else {
     const index = USERS.indexOf(user);
     USERS.splice(index, 1);
